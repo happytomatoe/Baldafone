@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images_3"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/cont"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/sett"
+        android:layout_below="@+id/new_game"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button2"
+        android:onClick="cont"
+        android:text="@string/cont"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/sett"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/about"
+        android:layout_below="@+id/cont"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button2"
+        android:onClick="settings"
+        android:text="@string/sett"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/exit"
+        android:layout_below="@+id/sett"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button2"
+        android:onClick="about"
+        android:text="@string/about"
+        android:textColor="@color/white"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/about"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button2"
+        android:onClick="exit"
+        android:text="@string/ex"
+        android:textColor="@color/white"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/new_game"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/cont"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/cont"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button2"
+        android:onClick="newGame"
+        android:text="@string/new_game"
+        android:textColor="@color/white"
+        android:typeface="sans" />
+
+</RelativeLayout>

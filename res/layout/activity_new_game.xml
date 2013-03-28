@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images_3"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical"
+    tools:context=".NewGame" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button2"
+        android:onClick="pvp"
+        android:text="@string/SC"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button2"
+        android:onClick="back"
+        android:text="@string/back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="sans" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button2"
+        android:onClick="pvp"
+        android:text="@string/FC"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:typeface="sans" />
+
+</RelativeLayout>

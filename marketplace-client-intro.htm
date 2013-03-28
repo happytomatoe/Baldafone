@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link rel="shortcut icon" href="http://marketplace.eclipse.org/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/marketplace-client-intro" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/3993" />
+  <title>Introducing the Eclipse Marketplace Client | Eclipse Plugins, Bundles and Products - Eclipse Marketplace</title>  
+  <link type="text/css" rel="stylesheet" href="http://marketplace.eclipse.org/sites/default/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://marketplace.eclipse.org/sites/default/files/css/css_4HnfM8PPheZ1CirkhBSg27RmBSYVVdjAe9AD4rMTSCw.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://marketplace.eclipse.org/sites/default/files/css/css_dVdIlX0LyYsoBy3CylqgOSNUkMvmaDlsKgFiFTWk63w.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://marketplace.eclipse.org/sites/default/files/css/css_Wx9LGV3GytT1YNwLy1A-CW1OHxmI4NSw_eAArYSztH0.css" media="all" />
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://marketplace.eclipse.org/sites/all/themes/omega_nova/css/ie/ie7.css?mk0ps1" media="all" />
+<![endif]-->
+
+<!--[if lte IE 6]>
+<link type="text/css" rel="stylesheet" href="http://marketplace.eclipse.org/sites/all/themes/omega_nova/css/ie/ie6.css?mk0ps1" media="all" />
+<![endif]-->
+<link type="text/css" rel="stylesheet" href="http://marketplace.eclipse.org/sites/all/themes/omega_nova/css/print.css?mk0ps1" media="print" />
+<link type="text/css" rel="stylesheet" href="http://marketplace.eclipse.org/sites/default/files/css/css_TAnyVktUQ4_LbUKmwT-c8TeeZ5lClWH6LI_x-52MBso.css" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="http://marketplace.eclipse.org/sites/default/files/css/css_OkmFgq-ijR2NHTl67MoWyOXKNZg07SisERBpNtlzlbc.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="http://marketplace.eclipse.org/sites/default/files/css/css_wJ4iXf2ud9SDE4kn-Bk-qbrBwDbVOzVSj3j3bcLX14U.css" media="all" />
+<!--<![endif]-->
+  <script type="text/javascript" src="http://marketplace.eclipse.org/sites/default/files/js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script>
+<script type="text/javascript" src="http://marketplace.eclipse.org/sites/default/files/js/js_KCd8rbJYUruV1tRJnh4um34UYvyhlrSVCPR1jNko2h8.js"></script>
+<script type="text/javascript" src="http://marketplace.eclipse.org/sites/default/files/js/js_B9uoFUzYKkkI0S0ZpxMfdJWvQ_6EhMAWTOswwmS_6YY.js"></script>
+<script type="text/javascript" src="http://marketplace.eclipse.org/sites/default/files/js/js_jtRSWrX0BSAiSK5KEOQ1D5YJIMgTE2N-yPIEM_rrD3o.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-910670-5"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://marketplace.eclipse.org/sites/default/files/js/js_Yb_8iLTEyVOsoyO3w_zhvrGncVnAQ61mjJE1--aviXg.js"></script>
+<script type="text/javascript" src="http://marketplace.eclipse.org/sites/default/files/js/js_43n5FBy8pZxQHxPXkf-sQF7ZiacVZke14b0VlvSA554.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\u002F", "pathPrefix":"", "ajaxPageState":{"theme":"omega_nova", "theme_token":"aof9wJdpifTJPWxBLFycixC8rmCbjaBxF6kI5tMH6YQ", "js":{"misc\u002Fjquery.js":1, "misc\u002Fjquery.once.js":1, "misc\u002Fdrupal.js":1, "misc\u002Fform.js":1, "sites\u002Fall\u002Fmodules\u002Fcustom\u002Fmarketplace\u002Fjs\u002Fmarketplace_categories.js":1, "sites\u002Fall\u002Fmodules\u002Fcustom\u002Fmarketplace\u002Fjs\u002Fmarketplace_tags.js":1, "sites\u002Fall\u002Fmodules\u002Fcustom\u002Fmarketplace\u002Fjs\u002Fmarketplace_icons.js":1, "sites\u002Fall\u002Fmodules\u002Fcustom\u002Fnova_search\u002Fnova_search.js":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fadsense\u002Fcontrib\u002Fadsense_click\u002Fadsense_click.js":1, "sites\u002Fall\u002Flibraries\u002Fcolorbox\u002Fcolorbox\u002Fjquery.colorbox-min.js":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fcolorbox\u002Fjs\u002Fcolorbox.js":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fcolorbox\u002Fstyles\u002Fdefault\u002Fcolorbox_default_style.js":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Ffacetapi\u002Ffacetapi.js":1, "misc\u002Fautocomplete.js":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fgoogle_analytics\u002Fgoogleanalytics.js":1, "0":1, "sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fjs\u002Fscript.js":1, "sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fjs\u002Fjquery.cookie.js":1, "sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fjs\u002Fjquery.url.packed.js":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Fomega\u002Fjs\u002Fjquery.formalize.js":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Fomega\u002Fjs\u002Fomega-mediaqueries.js":1}, "css":{"modules\u002Fsystem\u002Fsystem.base.css":1, "modules\u002Fsystem\u002Fsystem.menus.css":1, "modules\u002Fsystem\u002Fsystem.messages.css":1, "modules\u002Fsystem\u002Fsystem.theme.css":1, "modules\u002Fcomment\u002Fcomment.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fdate\u002Fdate_api\u002Fdate.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fdate\u002Fdate_popup\u002Fthemes\u002Fdatepicker.1.7.css":1, "modules\u002Ffield\u002Ftheme\u002Ffield.css":1, "sites\u002Fall\u002Fmodules\u002Fcustom\u002Feclipse_sites\u002Feclipse_sites.css":1, "sites\u002Fall\u002Fmodules\u002Fcustom\u002Fmarketplace\u002Fmarketplace.css":1, "modules\u002Fnode\u002Fnode.css":1, "sites\u002Fall\u002Fmodules\u002Fcustom\u002Fnova_metrics\u002Fnova_metrics.css":1, "sites\u002Fall\u002Fmodules\u002Fcustom\u002Fnova_search\u002Fnova_search.css":1, "modules\u002Fuser\u002Fuser.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fviews\u002Fcss\u002Fviews.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fapachesolr_autocomplete\u002Fapachesolr_autocomplete.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fcolorbox\u002Fstyles\u002Fdefault\u002Fcolorbox_default_style.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Fctools\u002Fcss\u002Fctools.css":1, "sites\u002Fall\u002Fmodules\u002Fcontrib\u002Ftagadelic\u002Ftagadelic.css":1, "modules\u002Fsearch\u002Fsearch.css":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Falpha\u002Fcss\u002Falpha-reset.css":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Falpha\u002Fcss\u002Falpha-mobile.css":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Fomega\u002Fcss\u002Fformalize.css":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Fomega\u002Fcss\u002Fomega-text.css":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Fomega\u002Fcss\u002Fomega-forms.css":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Fomega\u002Fcss\u002Fomega-visuals.css":1, "sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fcss\u002Fie\u002Fie7.css":1, "sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fcss\u002Fie\u002Fie6.css":1, "sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fcss\u002Fprint.css":1, "sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fcss\u002Fglobal.css":1, "ie::normal::sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fcss\u002Fomega-nova-alpha-default.css":1, "ie::normal::sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fcss\u002Fomega-nova-alpha-default-normal.css":1, "ie::normal::sites\u002Fall\u002Fthemes\u002Fomega\u002Falpha\u002Fcss\u002Fgrid\u002Falpha_default\u002Fnormal\u002Falpha-default-normal-12.css":1, "ie::normal::sites\u002Fall\u002Fthemes\u002Fomega\u002Falpha\u002Fcss\u002Fgrid\u002Falpha_default\u002Fnormal\u002Falpha-default-normal-24.css":1, "narrow::sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fcss\u002Fomega-nova-alpha-default.css":1, "narrow::sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fcss\u002Fomega-nova-alpha-default-narrow.css":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Falpha\u002Fcss\u002Fgrid\u002Falpha_default\u002Fnarrow\u002Falpha-default-narrow-12.css":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Falpha\u002Fcss\u002Fgrid\u002Falpha_default\u002Fnarrow\u002Falpha-default-narrow-24.css":1, "normal::sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fcss\u002Fomega-nova-alpha-default.css":1, "normal::sites\u002Fall\u002Fthemes\u002Fomega_nova\u002Fcss\u002Fomega-nova-alpha-default-normal.css":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Falpha\u002Fcss\u002Fgrid\u002Falpha_default\u002Fnormal\u002Falpha-default-normal-12.css":1, "sites\u002Fall\u002Fthemes\u002Fomega\u002Falpha\u002Fcss\u002Fgrid\u002Falpha_default\u002Fnormal\u002Falpha-default-normal-24.css":1}}, "colorbox":{"opacity":"0.85", "current":"{current} of {total}", "previous":"« Prev", "next":"Next »", "close":"Close", "maxWidth":"100%", "maxHeight":"100%", "fixed":true, "__drupal_alter_by_ref":[ "default" ]}, "jcarousel":{"ajaxPath":"\u002Fjcarousel\u002Fajax\u002Fviews"}, "facetapi":{"facets":[ {"limit":20, "id":"facetapi-facet-apachesolrproduction-block-sm-field-licensetype", "searcher":"apachesolr@production", "realmName":"block", "facetName":"sm_field_licensetype", "queryType":null, "widget":"facetapi_links"}, {"limit":20, "id":"facetapi-facet-apachesolrproduction-block-itm-field-installs-total", "searcher":"apachesolr@production", "realmName":"block", "facetName":"itm_field_installs_total", "queryType":"term", "widget":"facetapi_links"}, {"limit":20, "id":"facetapi-facet-apachesolrproduction-block-sm-field-status", "searcher":"apachesolr@production", "realmName":"block", "facetName":"sm_field_status", "queryType":null, "widget":"facetapi_links"}, {"limit":20, "id":"facetapi-facet-apachesolrproduction-block-im-field-product-type", "searcher":"apachesolr@production", "realmName":"block", "facetName":"im_field_product_type", "queryType":"term", "widget":"facetapi_links"}, {"limit":20, "id":"facetapi-facet-apachesolrproduction-block-im-taxonomy-vocabulary-1", "searcher":"apachesolr@production", "realmName":"block", "facetName":"im_taxonomy_vocabulary_1", "queryType":"term", "widget":"facetapi_links"}, {"limit":20, "id":"facetapi-facet-apachesolrproduction-block-im-taxonomy-vocabulary-3", "searcher":"apachesolr@production", "realmName":"block", "facetName":"im_taxonomy_vocabulary_3", "queryType":"term", "widget":"facetapi_links"} ]}, "googleanalytics":{"trackOutbound":1, "trackMailto":1, "trackDownload":1, "trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}, "omega":{"layouts":{"primary":"normal", "order":[ "narrow", "normal" ], "queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)", "normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in page-node page-node- page-node-3993 node-type-page context-marketplace-client-intro omega_nova">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="branding-data clearfix">
+            <div class="logo-img">
+        <a href="/" rel="home" title="Eclipse Plugins, Bundles and Products - Eclipse Marketplace"><img src="http://marketplace.eclipse.org/sites/all/themes/omega_nova/logo.png" alt="Eclipse Plugins, Bundles and Products - Eclipse Marketplace" id="logo" /></a>      </div>
+                        <hgroup class="site-name-slogan element-invisible">        
+                                <h2 class="site-name element-invisible"><a href="/" title="Home">Eclipse Plugins, Bundles and Products - Eclipse Marketplace</a></h2>
+                              </hgroup>
+          </div>
+        <div class="block block-eclipse-sites block-eclipse-sites block-eclipse-sites-eclipse-sites odd block-without-title" id="block-eclipse-sites-eclipse-sites">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="links inline clearfix"><li id="menu_eclipse_site_eclipsefoundation"><a href="/eclipse_sites/org"><span>Eclipse Foundation</span></a></li>
+<li id="menu_eclipse_site_eclipselive"><a href="/eclipse_sites/live"><span>Eclipse Live</span></a></li>
+<li id="menu_eclipse_site_eclipsebugzilla"><a href="/eclipse_sites/bugzilla"><span>Eclipse Bugzilla</span></a></li>
+<li id="menu_eclipse_site_eclipseforums"><a href="/eclipse_sites/forums"><span>Eclipse Forums</span></a></li>
+<li id="menu_eclipse_site_planeteclipse"><a href="/eclipse_sites/planet"><span>Planet Eclipse</span></a></li>
+<li id="menu_eclipse_site_eclipsewiki"><a href="/eclipse_sites/wiki"><span>Eclipse Wiki</span></a></li>
+<li id="menu_eclipse_site_myfoundationportal"><a href="/eclipse_sites/portal"><span>My Foundation Portal</span></a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  
+  <div id="zone-menu" class="zone zone-menu clearfix container-12">
+    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+        <nav class="navigation">
+      <h2 class="element-invisible">Main menu</h2><ul id="main-menu" class="links inline clearfix main-menu"><li class="menu-9027 first"><a href="/" title="Marketplace homepage">Home</a></li><li class="menu-8715"><a href="/my_marketplace" title="My Marketplace favorites.">My Marketplace</a></li><li class="menu-8713 last"><a href="/add_content" title="Add content to Marketplace.">Add Content</a></li></ul>      
+      <h2 class="element-invisible">Secondary menu</h2><ul id="secondary-menu" class="links inline clearfix secondary-menu"><li class="menu-8714 first last"><a href="/my_login" title="Eclipse user login.">Login</a></li></ul>          </nav>
+          </div>
+</div>
+  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-24">    
+        
+        <div class="grid-18 push-6 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+        <a id="main-content"></a>
+    <div class="title_header">
+                        <h1 class="title" id="page-title">Introducing the Eclipse Marketplace Client</h1>
+             
+                </div>
+     <section class="block block-multiblock block-2 block-multiblock-2 odd" id="block-multiblock-2">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Markets</h2>
+            
+    <div class="content clearfix">
+      <div class="accordion">
+<ul>
+<li class="marketExpander first"><a href="#">Eclipse Juno Projects (29)</a><span class="widget"></span>
+<ul class="market" id="2650">
+<li class="catExpander"><a href="/taxonomy/term/1964%2C2650">Application Development Frameworks</a> <span class="count">(3)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1%2C2650">Application Server</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/4%2C2650">Build and Deploy</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1973%2C2650">Business Intelligence, Reporting and Charting</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/2%2C2650">Code Management</a> <span class="count">(4)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1968%2C2650">Collaboration</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/3%2C2650">Database</a> <span class="count">(5)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1970%2C2650">Database Development</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/36%2C2650">Database Persistence</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/5%2C2650">Documentation</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1963%2C2650">EclipseRT Target Platform Components</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/6%2C2650">Editor</a> <span class="count">(8)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1972%2C2650">General Purpose Tools</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/8%2C2650">Graphics</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/24%2C2650">IDE</a> <span class="count">(5)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/9%2C2650">J2EE Development Platform</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/10%2C2650">Languages</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1974%2C2650">Mobile and Device Development</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1971%2C2650">Modeling</a> <span class="count">(4)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/11%2C2650">Modeling Tools</a> <span class="count">(5)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/38%2C2650">Mylyn Connectors</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/12%2C2650">Network</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/23%2C2650">Other</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1966%2C2650">Programming Languages</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/39%2C2650">Reporting</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/25%2C2650">Rich Client Applications</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/26%2C2650">SCM</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/40%2C2650">Search</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/14%2C2650">Source Code Analyzer</a> <span class="count">(3)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/29%2C2650">Systems Development</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/15%2C2650">Team Development</a> <span class="count">(4)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/16%2C2650">Testing</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/17%2C2650">Tools</a> <span class="count">(15)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/18%2C2650">UI</a> <span class="count">(3)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/19%2C2650">UML</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/20%2C2650">Web</a> <span class="count">(3)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1967%2C2650">Web, XML, Java EE and OSGi Enterprise Development</a> <span class="count">(2)</span></li>
+</ul>
+</li>   
+<li class="marketExpander "><a href="#">Tools (1367)</a><span class="widget"></span>
+<ul class="market" id="31">
+<li class="catExpander"><a href="/taxonomy/term/1964%2C31">Application Development Frameworks</a> <span class="count">(79)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/28%2C31">Application Management</a> <span class="count">(64)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1%2C31">Application Server</a> <span class="count">(72)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/42%2C31">BIRT</a> <span class="count">(23)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/4%2C31">Build and Deploy</a> <span class="count">(128)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1973%2C31">Business Intelligence, Reporting and Charting</a> <span class="count">(15)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/2%2C31">Code Management</a> <span class="count">(134)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1968%2C31">Collaboration</a> <span class="count">(32)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/3%2C31">Database</a> <span class="count">(64)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1970%2C31">Database Development</a> <span class="count">(26)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/36%2C31">Database Persistence</a> <span class="count">(36)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/5%2C31">Documentation</a> <span class="count">(64)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1963%2C31">EclipseRT Target Platform Components</a> <span class="count">(9)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/6%2C31">Editor</a> <span class="count">(260)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/7%2C31">Entertainment</a> <span class="count">(23)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1972%2C31">General Purpose Tools</a> <span class="count">(60)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/8%2C31">Graphics</a> <span class="count">(45)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/24%2C31">IDE</a> <span class="count">(305)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/9%2C31">J2EE Development Platform</a> <span class="count">(89)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/27%2C31">J2ME</a> <span class="count">(18)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/10%2C31">Languages</a> <span class="count">(143)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1969%2C31">Linux Tools</a> <span class="count">(7)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/37%2C31">Logging</a> <span class="count">(16)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1974%2C31">Mobile and Device Development</a> <span class="count">(36)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1971%2C31">Modeling</a> <span class="count">(62)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/11%2C31">Modeling Tools</a> <span class="count">(173)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/38%2C31">Mylyn Connectors</a> <span class="count">(30)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/12%2C31">Network</a> <span class="count">(26)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/23%2C31">Other</a> <span class="count">(85)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/30%2C31">Process</a> <span class="count">(35)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/13%2C31">Profiling</a> <span class="count">(24)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1966%2C31">Programming Languages</a> <span class="count">(48)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/39%2C31">Reporting</a> <span class="count">(40)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/25%2C31">Rich Client Applications</a> <span class="count">(67)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/26%2C31">SCM</a> <span class="count">(28)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/40%2C31">Search</a> <span class="count">(40)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1965%2C31">SOA Development</a> <span class="count">(11)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/14%2C31">Source Code Analyzer</a> <span class="count">(94)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/29%2C31">Systems Development</a> <span class="count">(71)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/15%2C31">Team Development</a> <span class="count">(79)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/16%2C31">Testing</a> <span class="count">(103)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/17%2C31">Tools</a> <span class="count">(548)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/18%2C31">UI</a> <span class="count">(116)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/19%2C31">UML</a> <span class="count">(74)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/20%2C31">Web</a> <span class="count">(105)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/21%2C31">Web Services</a> <span class="count">(57)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1967%2C31">Web, XML, Java EE and OSGi Enterprise Development</a> <span class="count">(42)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/22%2C31">XML</a> <span class="count">(49)</span></li>
+</ul>
+</li>   
+<li class="marketExpander"><a href="/taxonomy/term/33">RCP Applications (159)</a>
+<li class="marketExpander"><a href="/taxonomy/term/34">Training & Consulting (108)</a>
+</ul>
+</div> 
+    </div>
+  </div>
+</section>            <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <article class="node node-page node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-page-3993">
+            
+  
+  <div class="content clearfix">
+    <!-- google_ad_section_start --><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><h3>What is the Eclipse Marketplace Client</h3>
+<p>Eclipse Marketplace Client (MPC) is a rich client interface for browsing and installing the Eclipse based solutions listed on the Eclipse Marketplace portal. It is a new feature that allows Eclipse users to discover and install Eclipse solutions directly into their Eclipse installation. </p>
+<h3>Where can I get the Eclipse Marketplace Client</h3>
+<p>MPC is included in all of the packages available from the <a href="http://www.eclipse.org/downloads">Eclipse download page</a> (except the Classic Package). </p>
+<h3>How do I access the Eclipse Marketplace Client</h3>
+<p>You can start MPC by launching Eclipse and accessing it from the Help menu.<br /><img src="/sites/all/themes/nova/images/helpMarketplace.png" /></p>
+<p>Once launched the Marketplace Client presents a wizard that looks like this:<br /><img src="http://www.eclipse.org/mpc/images/newNoteworthy/mpc-client.png" /></p>
+<h4>Useful Links</h4>
+<p><a href="http://live.eclipse.org/node/921">MarketPlace Client Introduction Demo Video</a><br /><a href="http://www.eclipse.org/mpc/newNoteworthy.php">Eclipse Marketplace Client New + Noteworthy</a></p>
+</div></div></div><!-- google_ad_section_end -->  </div>
+  
+  <div class="clearfix">
+          <nav class="links node-links clearfix"></nav>
+    
+      </div>
+</article>    </div>
+  </div>
+</div>	  <div class="block block-block block-4 block-block-4 odd block-without-title" id="block-block-4">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script type="text/javascript"><!--
+google_ad_client = "pub-6797025590085056";
+/* 468x60, created 2/23/10 */
+google_ad_slot = "0096919806";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>    </div>
+  </div>
+</div>  
+  </div>
+</div><aside class="grid-6 pull-18 region region-sidebar-first" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <section class="block block-marketplace block-marketplace-categories block-marketplace-marketplace-categories odd collapse" id="block-marketplace-marketplace-categories">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Markets<span class="widget"></span></h2>
+            
+    <div class="content clearfix">
+      <div class="accordion">
+<ul>
+<li class="marketExpander first"><a href="#">Eclipse Juno Projects (29)</a><span class="widget"></span>
+<ul class="market" id="2650">
+<li class="catExpander"><a href="/taxonomy/term/1964%2C2650">Application Development Frameworks</a> <span class="count">(3)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1%2C2650">Application Server</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/4%2C2650">Build and Deploy</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1973%2C2650">Business Intelligence, Reporting and Charting</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/2%2C2650">Code Management</a> <span class="count">(4)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1968%2C2650">Collaboration</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/3%2C2650">Database</a> <span class="count">(5)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1970%2C2650">Database Development</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/36%2C2650">Database Persistence</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/5%2C2650">Documentation</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1963%2C2650">EclipseRT Target Platform Components</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/6%2C2650">Editor</a> <span class="count">(8)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1972%2C2650">General Purpose Tools</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/8%2C2650">Graphics</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/24%2C2650">IDE</a> <span class="count">(5)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/9%2C2650">J2EE Development Platform</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/10%2C2650">Languages</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1974%2C2650">Mobile and Device Development</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1971%2C2650">Modeling</a> <span class="count">(4)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/11%2C2650">Modeling Tools</a> <span class="count">(5)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/38%2C2650">Mylyn Connectors</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/12%2C2650">Network</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/23%2C2650">Other</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1966%2C2650">Programming Languages</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/39%2C2650">Reporting</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/25%2C2650">Rich Client Applications</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/26%2C2650">SCM</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/40%2C2650">Search</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/14%2C2650">Source Code Analyzer</a> <span class="count">(3)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/29%2C2650">Systems Development</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/15%2C2650">Team Development</a> <span class="count">(4)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/16%2C2650">Testing</a> <span class="count">(1)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/17%2C2650">Tools</a> <span class="count">(15)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/18%2C2650">UI</a> <span class="count">(3)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/19%2C2650">UML</a> <span class="count">(2)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/20%2C2650">Web</a> <span class="count">(3)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1967%2C2650">Web, XML, Java EE and OSGi Enterprise Development</a> <span class="count">(2)</span></li>
+</ul>
+</li>   
+<li class="marketExpander "><a href="#">Tools (1367)</a><span class="widget"></span>
+<ul class="market" id="31">
+<li class="catExpander"><a href="/taxonomy/term/1964%2C31">Application Development Frameworks</a> <span class="count">(79)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/28%2C31">Application Management</a> <span class="count">(64)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1%2C31">Application Server</a> <span class="count">(72)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/42%2C31">BIRT</a> <span class="count">(23)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/4%2C31">Build and Deploy</a> <span class="count">(128)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1973%2C31">Business Intelligence, Reporting and Charting</a> <span class="count">(15)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/2%2C31">Code Management</a> <span class="count">(134)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1968%2C31">Collaboration</a> <span class="count">(32)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/3%2C31">Database</a> <span class="count">(64)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1970%2C31">Database Development</a> <span class="count">(26)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/36%2C31">Database Persistence</a> <span class="count">(36)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/5%2C31">Documentation</a> <span class="count">(64)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1963%2C31">EclipseRT Target Platform Components</a> <span class="count">(9)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/6%2C31">Editor</a> <span class="count">(260)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/7%2C31">Entertainment</a> <span class="count">(23)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1972%2C31">General Purpose Tools</a> <span class="count">(60)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/8%2C31">Graphics</a> <span class="count">(45)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/24%2C31">IDE</a> <span class="count">(305)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/9%2C31">J2EE Development Platform</a> <span class="count">(89)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/27%2C31">J2ME</a> <span class="count">(18)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/10%2C31">Languages</a> <span class="count">(143)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1969%2C31">Linux Tools</a> <span class="count">(7)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/37%2C31">Logging</a> <span class="count">(16)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1974%2C31">Mobile and Device Development</a> <span class="count">(36)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1971%2C31">Modeling</a> <span class="count">(62)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/11%2C31">Modeling Tools</a> <span class="count">(173)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/38%2C31">Mylyn Connectors</a> <span class="count">(30)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/12%2C31">Network</a> <span class="count">(26)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/23%2C31">Other</a> <span class="count">(85)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/30%2C31">Process</a> <span class="count">(35)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/13%2C31">Profiling</a> <span class="count">(24)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1966%2C31">Programming Languages</a> <span class="count">(48)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/39%2C31">Reporting</a> <span class="count">(40)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/25%2C31">Rich Client Applications</a> <span class="count">(67)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/26%2C31">SCM</a> <span class="count">(28)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/40%2C31">Search</a> <span class="count">(40)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1965%2C31">SOA Development</a> <span class="count">(11)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/14%2C31">Source Code Analyzer</a> <span class="count">(94)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/29%2C31">Systems Development</a> <span class="count">(71)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/15%2C31">Team Development</a> <span class="count">(79)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/16%2C31">Testing</a> <span class="count">(103)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/17%2C31">Tools</a> <span class="count">(548)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/18%2C31">UI</a> <span class="count">(116)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/19%2C31">UML</a> <span class="count">(74)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/20%2C31">Web</a> <span class="count">(105)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/21%2C31">Web Services</a> <span class="count">(57)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/1967%2C31">Web, XML, Java EE and OSGi Enterprise Development</a> <span class="count">(42)</span></li>
+<li class="catExpander"><a href="/taxonomy/term/22%2C31">XML</a> <span class="count">(49)</span></li>
+</ul>
+</li>   
+<li class="marketExpander"><a href="/taxonomy/term/33">RCP Applications (159)</a>
+<li class="marketExpander"><a href="/taxonomy/term/34">Training & Consulting (108)</a>
+</ul>
+</div> 
+    </div>
+  </div>
+</section><section class="block block-multiblock block-1 block-multiblock-1 even" id="block-multiblock-1">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Search<span class="widget"></span></h2>
+            
+    <div class="content clearfix">
+      <a id="search"></a><form class="search-form" action="/marketplace-client-intro?mpc_install=27025" method="post" id="search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div id="edit-count" class="form-item form-type-item">
+ <p><strong>1546</strong> Solutions and counting.</p>
+</div>
+<input type="hidden" name="get" value="{&quot;mpc_install&quot;:&quot;27025&quot;}" />
+<div class="form-item form-type-textfield form-item-keys">
+  <input type="text" id="edit-keys" name="keys" value="" size="30" maxlength="255" class="form-text form-autocomplete" /><input type="hidden" id="edit-keys-autocomplete" value="http://marketplace.eclipse.org/apachesolr_autocomplete" disabled="disabled" class="autocomplete" />
+</div>
+<div class="form-item form-type-select form-item-category">
+ <select id="edit-category" name="category" class="form-select"><option value="0">All Solutions Categories</option><option value="1964">Application Development Frameworks</option><option value="28">Application Management</option><option value="1">Application Server</option><option value="42">BIRT</option><option value="4">Build and Deploy</option><option value="1973">Business Intelligence, Reporting and Charting</option><option value="2">Code Management</option><option value="1968">Collaboration</option><option value="3">Database</option><option value="1970">Database Development</option><option value="36">Database Persistence</option><option value="5">Documentation</option><option value="1963">EclipseRT Target Platform Components</option><option value="6">Editor</option><option value="7">Entertainment</option><option value="1972">General Purpose Tools</option><option value="8">Graphics</option><option value="24">IDE</option><option value="9">J2EE Development Platform</option><option value="27">J2ME</option><option value="10">Languages</option><option value="1969">Linux Tools</option><option value="37">Logging</option><option value="1974">Mobile and Device Development</option><option value="1971">Modeling</option><option value="11">Modeling Tools</option><option value="38">Mylyn Connectors</option><option value="12">Network</option><option value="23">Other</option><option value="30">Process</option><option value="13">Profiling</option><option value="1966">Programming Languages</option><option value="39">Reporting</option><option value="26">SCM</option><option value="40">Search</option><option value="1965">SOA Development</option><option value="14">Source Code Analyzer</option><option value="29">Systems Development</option><option value="15">Team Development</option><option value="16">Testing</option><option value="17">Tools</option><option value="18">UI</option><option value="19">UML</option><option value="20">Web</option><option value="21">Web Services</option><option value="1967">Web, XML, Java EE and OSGi Enterprise Development</option><option value="22">XML</option></select>
+</div>
+<div class="form-item form-type-select form-item-market">
+ <select id="edit-market" name="market" class="form-select"><option value="0">All Markets</option><option value="2650">Eclipse Juno Projects</option><option value="31">Tools</option><option value="33">RCP Applications</option><option value="34">Training &amp; Consulting</option></select>
+</div>
+</div><input type="hidden" name="form_build_id" value="form-Jn87q2Ufq1qrHk-KI8wnsOoIpz_HKrAY60XCYAic3HA" />
+<input type="hidden" name="form_id" value="apachesolr_search_custom_page_search_form" />
+<div id="edit-btn-advanced" class="form-item form-type-item">
+ <div class="advSearchToggle"><a href="#search">Advanced Search <img width="10" height="10" src="/sites/all/modules/custom/nova_search/images/arrow-black-down.png"/></a></div>
+</div>
+<div id="advancedSearch"><fieldset class="form-wrapper" id="edit-advanced"><div class="fieldset-wrapper"><div class="form-item form-type-select form-item-status">
+  <label for="edit-status">Status </label>
+ <select id="edit-status" name="status" class="form-select"><option value="0">All</option><option value="Production/Stable">Production/Stable</option><option value="Beta">Beta</option><option value="Mature">Mature</option><option value="Alpha">Alpha</option></select>
+</div>
+<div class="form-item form-type-select form-item-license">
+  <label for="edit-license">License Type </label>
+ <select id="edit-license" name="license" class="form-select"><option value="0">All</option><option value="Commercial">Commercial</option><option value="Commercial - Free">Commercial - Free</option><option value="EPL">EPL</option><option value="GPL">GPL</option><option value="ASL">ASL</option><option value="BSD-Like">BSD-Like</option><option value="LGPL">LGPL</option><option value="Free for non-commerical use">Free for non-commercial use</option><option value="Other">Other</option></select>
+</div>
+</div></fieldset>
+</div><input type="submit" id="edit-submit" name="op" value="" class="form-submit" /></div></form>    </div>
+  </div>
+</section>  </div>
+</aside>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div class="grid-12 region region-footer-first" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <div class="block block-eclipse-sites block-eclipse-footer-copyright block-eclipse-sites-eclipse-footer-copyright odd block-without-title" id="block-eclipse-sites-eclipse-footer-copyright">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="links inline clearfix"><li id="menu_eclipse_site_welcome"><a href="/eclipse_sites/mp_welcome"><span>Welcome</span></a></li>
+<li id="menu_eclipse_site_publishingguidelines"><a href="/eclipse_sites/mp_guidelines"><span>Publishing Guidelines</span></a></li>
+<li id="menu_eclipse_site_privacypolicy"><a href="/eclipse_sites/privacy"><span>Privacy Policy</span></a></li>
+<li id="menu_eclipse_site_termsofuse"><a href="/eclipse_sites/terms"><span>Terms of Use</span></a></li>
+<li id="menu_eclipse_site_copyrightagent"><a href="/eclipse_sites/copyright"><span>Copyright Agent</span></a></li>
+<li id="menu_eclipse_site_legal"><a href="/eclipse_sites/legal"><span>Legal</span></a></li>
+</ul><span id="span_copyright">Copyright &copy; 2013 The Eclipse Foundation. All Rights Reserved.</span>    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div></footer>  </div>  </body>
+</html>
