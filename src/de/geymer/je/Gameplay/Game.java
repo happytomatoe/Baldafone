@@ -10,6 +10,9 @@ import java.io.ObjectOutputStream;
 import java.io.OptionalDataException;
 import java.io.StreamCorruptedException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -20,7 +23,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
-import android.preference.PreferenceManager;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.Menu;
@@ -44,6 +46,9 @@ public class Game extends Activity implements OnTouchListener {
 	private boolean withBot;
 	private TextView statusBar, timer;
 	private String word = "";
+	private static HashSet<String> map=new HashSet<String>();
+ 
+    private static HashMap<String,String> addDict=new HashMap<String,String>();
 	private Handler handler = new Handler();
 	private ImageButton accept, decline;
 	private ArrayList<Integer> wordPositions = new ArrayList<Integer>();
@@ -71,6 +76,34 @@ public class Game extends Activity implements OnTouchListener {
 	private TextView tv4;
 	private TextView tv1;
 	private TextView tv3;
+
+	   /**
+     * @return the map
+     */
+    public static HashSet<String> getMap() {
+        return map;
+    }
+
+    /**
+     * @param map the map to set
+     */
+    public static void setMap(HashSet<String> map) {
+        Game.map = map;
+    }
+
+    /**
+     * @return the addDict
+     */
+    public static HashMap<String, String> getAddDict() {
+        return addDict;
+    }
+
+    /**
+     * @param addDict the addDict to set
+     */
+    public static void setAddDict(HashMap<String, String> addDict) {
+        Game.addDict = addDict;
+    }
 
 	public  boolean exists(String word) {
 		if (sp.getBoolean(word, false))
@@ -154,7 +187,12 @@ public class Game extends Activity implements OnTouchListener {
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_game);
 		getIntentVariables();
-		sp=PreferenceManager.getDefaultSharedPreferences(this);
+		
+		sp=getSharedPreferences("uk_UA",Activity.MODE_PRIVATE);
+		long start=System.currentTimeMillis();
+		Set s=sp.getAll().keySet();
+		System.out.println(s.contains("€блоко"));
+		System.out.println("Time "+(System.currentTimeMillis()-start));
 		gridview = (GridView) findViewById(R.id.gridview);
 		statusBar = (TextView) findViewById(R.id.statusBar);
 		keyboard = (GridView) findViewById(R.id.keyboard);

@@ -2,9 +2,9 @@ package de.geymer.je.Gameplay;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.Map;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -113,6 +113,9 @@ private void copyFile(String filename) {
     AssetManager assetManager = getAssets();
     InputStream in = null;
     OutputStream out = null;
+    String newFolderName = "/data/data/" + getPackageName() + "/" + filename.substring(0,filename.indexOf("/"));
+    File dir=new File(newFolderName);
+    if(!dir.exists())dir.mkdir();
     try {
         in = assetManager.open(filename);
         String newFileName = "/data/data/" + getPackageName() + "/" + filename;
@@ -134,49 +137,49 @@ private void copyFile(String filename) {
 
 }
 		protected Void doInBackground(Void... unused) {
-//			Scanner sc = null;
-//			Database mydatabase = new Database(MainActivity.this);
-//			SQLiteDatabase db = mydatabase.getDb();
-//			db.beginTransaction();
-//			ContentValues c= new ContentValues();
-//			SharedPreferences.Editor editor = sp.edit();
-//			editor.clear().commit();
-//			try {
-//				sc = new Scanner(getResources().getAssets().open("uk_UA.txt"));
-//			} catch (FileNotFoundException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			} catch (IOException e) {
-//				e.printStackTrace();
-//			}
-//			while (sc.hasNextLine()) {
-//				String s = sc.nextLine();
-//				editor.putBoolean(s, true);
-//				if (s.length() == 5){
-//					c.put(DBHelper.COLUMN_WORD, s);
-//					db.insert(DBHelper.TABLE_NAME, null,c);
-//					c= new ContentValues();
-//					Log.d("DB",String.valueOf(i++));
-//				}
-//			}
-//			Log.d("Finish","Finish");
-//			db.setTransactionSuccessful();
-//			db.endTransaction();
-//			editor.commit();
-//			mydatabase.close();
 		  copyAssets();
 			return null;
 		}
-
+//		private  void createAddDict() {
+//SharedPreferences sp=getSharedPreferences("uk_UA", Activity.MODE_PRIVATE);
+//SharedPreferences sp2=getSharedPreferences("AddDict", Activity.MODE_PRIVATE);
+//SharedPreferences.Editor edit=sp2.edit();
+//edit.clear().commit();
+//Map<String,String> addDict=(Map<String, String>) sp2.getAll();	  
+//for (String key : sp.getAll().keySet()) {
+//    if(key.length()==2){
+//        String part1 = key.substring(1), part2 = key.substring(0, 1), part3 = key
+//            .substring(0, key.length() - 1), part4 = key.substring(key
+//            .length() - 1);
+//
+//    if (addDict.containsKey("." + part1))
+//        addDict.put("." + part1, addDict.get("." + part1) + " " + part2);
+//    else
+//        addDict.put("." + part1, part2);}
+//    else{
+//    String part1="."+key.substring(1,key.length()-1)+".";
+//    String part2=key.charAt(0)+"-"+key.charAt(key.length()-1);
+//    if (addDict.containsKey(part1))
+//        addDict.put(part1, addDict.get(part1)+ " " + part2);
+//    else
+//        addDict.put(part1, part2);
+//    }
+//}
+//  
+//for(String s:addDict.keySet())
+//    edit.putString(s, addDict.get(s));
+//edit.commit();
+//	        }
 		/**
          * 
          */
         private void copyAssets() {
            start = System.currentTimeMillis();
-           
-            copyFile("shared_prefs/com.example.bubblerubble_preferences.xml");
+            copyFile("shared_prefs/uk_UA.xml");
+           //createAddDict(); 
+           copyFile("shared_prefs/addDict.xml");
             copyFile("databases/mydb");
-        
+            
         }
 
         protected void onPostExecute(Void unused) {
